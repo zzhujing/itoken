@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: itoken-admin
+management:
+  endpoint:
+    health:
+      show-details: always
+server:
+  port: 8084
