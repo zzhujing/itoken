@@ -1,0 +1,8 @@
+spring:
+  # \u5206\u5E03\u5F0F\u914D\u7F6E\u4E2D\u5FC3
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-client-zipkin, itoken-client-admin, itoken-eureka
+      label: master
+      profile: dev
