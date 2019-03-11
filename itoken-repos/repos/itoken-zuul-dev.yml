@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: itoken-zuul
+zuul:
+  routes:
+    zipkin:
+      path: /zipkin/**
+      serviceId: itoken-zipkin
+server:
+  port: 8769
