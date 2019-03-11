@@ -3,6 +3,14 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-      name: itoken-client-zipkin, itoken-eureka,itoken-admin
+      name: itoken-client-zipkin, itoken-client-eureka,itoken-admin
       label: master
       profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone:
+    registry-fetch-interval-seconds: 10
+  instance:
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5

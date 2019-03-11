@@ -8,7 +8,9 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     fetch-registry: false
     register-with-eureka: false
+    registry-fetch-interval-seconds: 10
   instance:
     hostname: localhost
+    prefer-ip-address: true
 server:
   port: 8761
