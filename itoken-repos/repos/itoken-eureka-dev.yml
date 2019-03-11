@@ -11,6 +11,5 @@ eureka:
     registry-fetch-interval-seconds: 10
   instance:
     hostname: localhost
-    prefer-ip-address: true
 server:
   port: 8761
